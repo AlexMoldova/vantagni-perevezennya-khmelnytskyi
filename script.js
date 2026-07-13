@@ -105,3 +105,19 @@ document.addEventListener('click', (e) => {
         nav.classList.remove('active');
     }
 });
+
+// ===== PREVENT BODY SCROLL WHEN NAV OPEN =====
+burger.addEventListener('click', () => {
+    if (nav.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+});
+
+// Restore scroll when nav link clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.style.overflow = '';
+    });
+});
