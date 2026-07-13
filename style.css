@@ -1180,25 +1180,72 @@ img {
 }
 
 @media (max-width: 768px) {
+    /* ===== MOBILE HEADER (two rows) ===== */
+    .header {
+        padding: 0;
+    }
+
+    .header-inner {
+        flex-wrap: wrap;
+        padding: 10px 16px;
+        gap: 0;
+    }
+
+    /* Row 1: logo (left) + burger (right) */
+    .logo {
+        flex: 0 0 auto;
+    }
+
+    .burger {
+        display: flex;
+        flex: 0 0 auto;
+        margin-left: auto;
+    }
+
+    /* Row 2: phone button full width */
+    .phone-header {
+        order: 3;
+        flex: 1 1 100%;
+        margin-top: 10px;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 1.1rem;
+        border-radius: var(--radius-sm);
+    }
+
+    /* Keep phone number visible on mobile */
+    .phone-header .phone-number {
+        display: inline;
+    }
+
+    /* Mobile nav dropdown */
     .nav {
         display: none;
         position: fixed;
-        top: 60px;
+        top: 120px;
         left: 0;
         right: 0;
         background: var(--dark-blue);
         flex-direction: column;
-        padding: 24px;
+        padding: 20px 24px;
         gap: 16px;
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(237, 249, 53, 0.2);
+        z-index: 999;
     }
 
     .nav.active {
         display: flex;
     }
 
-    .burger {
-        display: flex;
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 8px 0;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+        padding: 50px 0 100px;
     }
 
     .hero-grid {
@@ -1207,7 +1254,7 @@ img {
     }
 
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .hero-subtitle {
@@ -1219,11 +1266,11 @@ img {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .cta-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .hero-stats {
@@ -1232,14 +1279,6 @@ img {
 
     .stat-num {
         font-size: 1.5rem;
-    }
-
-    .phone-header .phone-number {
-        display: none;
-    }
-
-    .phone-header {
-        padding: 10px 14px;
     }
 
     .footer-inner {
@@ -1266,7 +1305,7 @@ img {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 
     .hero-actions {
@@ -1286,18 +1325,15 @@ img {
 
     .hero-stats {
         flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .stat-divider {
+        display: none;
     }
 
     .messenger-card {
         min-width: 100px;
         padding: 18px 20px;
-    }
-
-    .messenger-btn span {
-        display: none;
-    }
-
-    .messenger-btn {
-        padding: 12px;
     }
 }
