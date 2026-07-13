@@ -452,9 +452,15 @@ img {
     position: relative;
 }
 
-.hero-image-placeholder {
+.hero-image {
     position: relative;
     z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 60px rgba(10, 18, 145, 0.2);
 }
 
 .placeholder-box {
