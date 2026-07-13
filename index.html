@@ -3,74 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вантажні перевезення Хмельницький — Замовити вантажоперевезення</title>
-    <meta name="description" content="Вантажні перевезення по Хмельницькому та області. Надійно, швидко, доступно. Замовляйте: 068 076 46 09">
-    <meta property="og:title" content="Вантажні перевезення Хмельницький">
-    <meta property="og:description" content="Вантажні перевезення по Хмельницькому та області. Замовляйте: 068 076 46 09">
+    <title>Вантажні перевезення Хмельницький — Замовити вантажоперевезення | ВантажХМ</title>
+    <meta name="description" content="Вантажні перевезення по Хмельницькому та області. Швидка подача 30 хв. Квартирні переїзди, будматеріали, меблі. Замовляйте: 068 076 46 09">
+    <meta property="og:title" content="Вантажні перевезення Хмельницький — ВантажХМ">
+    <meta property="og:description" content="Швидко. Надійно. Доступно. Подача машини за 30 хвилин. ☎ 068 076 46 09">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- SCROLL PROGRESS BAR -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <!-- HEADER -->
-<header class="header">
+<header class="header" id="header">
     <div class="container header-inner">
-        <div class="logo">
+        <a href="#" class="logo">
             <span class="logo-icon">🚛</span>
             <span class="logo-text">Вантаж<sup>ХМ</sup></span>
-        </div>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="#advantages" class="nav-link">Переваги</a>
+            <a href="#services" class="nav-link">Послуги</a>
+            <a href="#gallery" class="nav-link">Техніка</a>
+            <a href="#contacts" class="nav-link">Контакти</a>
+        </nav>
         <a href="tel:+380680764609" class="phone-header">
+            <span class="phone-pulse"></span>
             <span class="phone-icon">📞</span>
             <span class="phone-number">068 076 46 09</span>
         </a>
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">Вантажні перевезення<br>по Хмельницькому</h1>
+    <div class="hero-bg-pattern"></div>
+    <div class="container hero-grid">
+        <div class="hero-content" data-aos="fade-right">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Працюємо зараз
+            </div>
+            <h1 class="hero-title">
+                Вантажні перевезення<br>
+                <span class="hero-highlight">по Хмельницькому</span>
+            </h1>
             <p class="hero-subtitle">Швидко. Надійно. Доступно.</p>
-            <p class="hero-text">Здійснюємо вантажні перевезення по місту Хмельницький та області. Працюємо цілодобово, підача машини — від 30 хвилин.</p>
+            <p class="hero-text">Здійснюємо вантажні перевезення по місту Хмельницький та області. Подача машини — від 30 хвилин. Працюємо щодня з 06:00 до 23:00.</p>
             <div class="hero-actions">
-                <a href="tel:+380680764609" class="btn btn-yellow">📞 Замовити перевезення</a>
-                <a href="#services" class="btn btn-outline">Наші послуги</a>
+                <a href="tel:+380680764609" class="btn btn-yellow btn-glow">
+                    <span>📞</span> Замовити перевезення
+                </a>
+                <a href="#services" class="btn btn-outline">Наші послуги →</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-count="30">0</span><span class="stat-suffix">хв</span>
+                    <span class="stat-label">подача машини</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="7">0</span><span class="stat-suffix">днів</span>
+                    <span class="stat-label">на тиждень</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">гарантія</span>
+                </div>
             </div>
         </div>
-        <div class="hero-image-placeholder">
-            <div class="placeholder-box">
-                <span>📷</span>
-                <p>Фото вантажної машини</p>
+        <div class="hero-visual" data-aos="fade-left">
+            <div class="hero-image-placeholder">
+                <div class="placeholder-box">
+                    <span class="placeholder-icon">🚛</span>
+                    <p>Фото вантажної машини</p>
+                    <span class="placeholder-hint">1200×800px</span>
+                </div>
+            </div>
+            <div class="hero-floating-card hero-floating-1">
+                <span class="card-icon">⏱️</span>
+                <div>
+                    <strong>30 хв</strong>
+                    <small>подача</small>
+                </div>
+            </div>
+            <div class="hero-floating-card hero-floating-2">
+                <span class="card-icon">💰</span>
+                <div>
+                    <strong>Чесна ціна</strong>
+                    <small>без доплат</small>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="hero-wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path d="M0,40 C360,80 720,0 1440,40 L1440,80 L0,80 Z" fill="#FAF8F7"/>
+        </svg>
     </div>
 </section>
 
 <!-- ADVANTAGES -->
-<section class="advantages">
+<section class="advantages" id="advantages">
     <div class="container">
-        <h2 class="section-title">Чому обирають нас</h2>
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Чому ми</span>
+            <h2 class="section-title">Чому обирають нас</h2>
+            <p class="section-desc">Ми відповідально підходимо до кожного замовлення — від дзвінка до розвантаження</p>
+        </div>
         <div class="advantages-grid">
-            <div class="advantage-card">
-                <div class="adv-icon">⏱️</div>
+            <div class="advantage-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="adv-icon-wrap">
+                    <div class="adv-icon">⏱️</div>
+                </div>
                 <h3>Швидка подача</h3>
                 <p>Машина приїде за 30 хвилин після замовлення по Хмельницькому</p>
             </div>
-            <div class="advantage-card">
-                <div class="adv-icon">💪</div>
+            <div class="advantage-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="adv-icon-wrap">
+                    <div class="adv-icon">💪</div>
+                </div>
                 <h3>Досвідчені вантажники</h3>
                 <p>Розвантажимо та завантажимо ваші речі акуратно і швидко</p>
             </div>
-            <div class="advantage-card">
-                <div class="adv-icon">💰</div>
+            <div class="advantage-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="adv-icon-wrap">
+                    <div class="adv-icon">💰</div>
+                </div>
                 <h3>Чесні ціни</h3>
-                <p>Фіксована вартість без прихованих доплат</p>
+                <p>Фіксована вартість без прихованих доплат — погоджуємо заранее</p>
             </div>
-            <div class="advantage-card">
-                <div class="adv-icon">🛡️</div>
+            <div class="advantage-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="adv-icon-wrap">
+                    <div class="adv-icon">🛡️</div>
+                </div>
                 <h3>Надійно</h3>
-                <p>Відповідальне ставлення до вашого вантажу</p>
+                <p>Відповідальне ставлення до вашого вантажу на всіх етапах</p>
             </div>
         </div>
     </div>
@@ -79,46 +156,58 @@
 <!-- SERVICES -->
 <section class="services" id="services">
     <div class="container">
-        <h2 class="section-title">Наші послуги</h2>
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Послуги</span>
+            <h2 class="section-title">Наші послуги</h2>
+            <p class="section-desc">Повний спектр вантажних перевезень для фізичних та юридичних осіб</p>
+        </div>
         <div class="services-grid">
-            <div class="service-card">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="0">
                 <div class="service-image-placeholder">
-                    <span>📷</span>
-                    <p>Фото: квартирний переїзд</p>
+                    <span class="placeholder-icon">📷</span>
+                    <p>Квартирний переїзд</p>
                 </div>
                 <div class="service-body">
+                    <span class="service-num">01</span>
                     <h3>Квартирні та офісні переїзди</h3>
-                    <p>Повний цикл переїзду: упаковка, навантаження, транспортування, розвантаження.</p>
+                    <p>Повний цикл: упаковка, навантаження, транспортування, розвантаження та розміщення.</p>
+                    <a href="tel:+380680764609" class="service-link">Замовити →</a>
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
                 <div class="service-image-placeholder">
-                    <span>📷</span>
-                    <p>Фото: будівельні вантажі</p>
+                    <span class="placeholder-icon">📷</span>
+                    <p>Будівельні вантажі</p>
                 </div>
                 <div class="service-body">
-                    <h3>Перевезення будівельних матеріалів</h3>
-                    <p>Цегла, бетон, доски, сухі суміші та інші будівельні вантажі.</p>
+                    <span class="service-num">02</span>
+                    <h3>Будівельні матеріали</h3>
+                    <p>Цегла, бетон, доски, сухі суміші, пісок, щебінка та інші будівельні вантажі.</p>
+                    <a href="tel:+380680764609" class="service-link">Замовити →</a>
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
                 <div class="service-image-placeholder">
-                    <span>📷</span>
-                    <p>Фото: меблі та техніка</p>
+                    <span class="placeholder-icon">📷</span>
+                    <p>Меблі та техніка</p>
                 </div>
                 <div class="service-body">
-                    <h3>Перевезення меблів та техніки</h3>
+                    <span class="service-num">03</span>
+                    <h3>Меблі та побутова техніка</h3>
                     <p>Обережне перевезення крупногабаритних меблів та побутової техніки.</p>
+                    <a href="tel:+380680764609" class="service-link">Замовити →</a>
                 </div>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
                 <div class="service-image-placeholder">
-                    <span>📷</span>
-                    <p>Фото: вантаж по області</p>
+                    <span class="placeholder-icon">📷</span>
+                    <p>Вантаж по області</p>
                 </div>
                 <div class="service-body">
+                    <span class="service-num">04</span>
                     <h3>Перевезення по області</h3>
-                    <p>Доставимо ваш вантаж у будь-яку точку Хмельницької області.</p>
+                    <p>Доставимо ваш вантаж у будь-яку точку Хмельницької області швидко і надійно.</p>
+                    <a href="tel:+380680764609" class="service-link">Замовити →</a>
                 </div>
             </div>
         </div>
@@ -126,21 +215,25 @@
 </section>
 
 <!-- GALLERY -->
-<section class="gallery">
+<section class="gallery" id="gallery">
     <div class="container">
-        <h2 class="section-title">Наша техніка</h2>
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag section-tag-yellow">Техніка</span>
+            <h2 class="section-title section-title-light">Наша техніка</h2>
+            <p class="section-desc section-desc-light">Сучасний транспорт для будь-яких вантажів</p>
+        </div>
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <div class="placeholder-box"><span>📷</span><p>Фото 1</p></div>
+            <div class="gallery-item" data-aos="flip-left" data-aos-delay="0">
+                <div class="placeholder-box"><span class="placeholder-icon">📷</span><p>Фото 1</p></div>
             </div>
-            <div class="gallery-item">
-                <div class="placeholder-box"><span>📷</span><p>Фото 2</p></div>
+            <div class="gallery-item" data-aos="flip-left" data-aos-delay="100">
+                <div class="placeholder-box"><span class="placeholder-icon">📷</span><p>Фото 2</p></div>
             </div>
-            <div class="gallery-item">
-                <div class="placeholder-box"><span>📷</span><p>Фото 3</p></div>
+            <div class="gallery-item" data-aos="flip-left" data-aos-delay="200">
+                <div class="placeholder-box"><span class="placeholder-icon">📷</span><p>Фото 3</p></div>
             </div>
-            <div class="gallery-item">
-                <div class="placeholder-box"><span>📷</span><p>Фото 4</p></div>
+            <div class="gallery-item" data-aos="flip-left" data-aos-delay="300">
+                <div class="placeholder-box"><span class="placeholder-icon">📷</span><p>Фото 4</p></div>
             </div>
         </div>
     </div>
@@ -148,32 +241,83 @@
 
 <!-- CTA -->
 <section class="cta">
-    <div class="container">
+    <div class="cta-bg-pattern"></div>
+    <div class="container cta-inner" data-aos="zoom-in">
+        <div class="cta-icon-big">🚛</div>
         <h2 class="cta-title">Потрібне перевезення прямо зараз?</h2>
         <p class="cta-text">Дзвоніть — і ми приїдемо за 30 хвилин!</p>
-        <a href="tel:+380680764609" class="btn btn-yellow btn-large">📞 068 076 46 09</a>
+        <a href="tel:+380680764609" class="btn btn-yellow btn-large btn-glow">
+            <span>📞</span> 068 076 46 09
+        </a>
+        <div class="cta-messengers">
+            <p class="cta-mess-title">Або напишіть у месенджер:</p>
+            <div class="messengers-row">
+                <a href="viber://chat?number=%2B380680764609" class="messenger-btn viber" title="Viber">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 13.27c-.2.56-1.18 1.07-1.63 1.12-.42.05-.95.07-1.53-.11-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.01-3.49-4.13-3.65-.12-.16-1-1.33-1-2.54s.63-1.8.86-2.04c.22-.24.48-.3.64-.3h.46c.15 0 .34-.06.53.41.2.48.68 1.66.74 1.78.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.11-.24.23-.1.45.14.22.62 1.02 1.33 1.65.92.82 1.69 1.07 1.93 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.14z"/></svg>
+                    <span>Viber</span>
+                </a>
+                <a href="https://t.me/+380680764609" class="messenger-btn telegram" title="Telegram">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.92 6.34l-1.64 7.74c-.12.56-.46.7-.93.44l-2.57-1.9-1.24 1.19c-.14.14-.25.25-.51.25l.18-2.6 4.75-4.29c.21-.18-.04-.28-.32-.1l-5.87 3.69-2.53-.79c-.55-.17-.56-.55.12-.81l9.88-3.81c.46-.17.86.11.71.99z"/></svg>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://wa.me/380680764609" class="messenger-btn whatsapp" title="WhatsApp">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33C8.53 21.5 10.22 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.22-.45-4.55-1.24l-.33-.2-3.01.79.8-2.94-.21-.34C5.16 14.76 4.7 13.43 4.7 12c0-4.03 3.27-7.3 7.3-7.3s7.3 3.27 7.3 7.3-3.27 7.3-7.3 7.3zm4.02-5.46c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.49.11-.14.22-.55.71-.68.86-.12.14-.25.16-.47.05-.22-.11-.92-.34-1.76-1.08-.65-.58-1.09-1.29-1.22-1.51-.12-.22-.01-.33.1-.44.1-.1.22-.25.33-.38.11-.13.14-.22.22-.37.07-.14.04-.27-.02-.38-.05-.11-.49-1.18-.67-1.62-.18-.43-.36-.37-.49-.38h-.42c-.14 0-.37.05-.56.27-.19.22-.74.72-.74 1.76s.76 2.04.86 2.18c.11.14 1.49 2.28 3.61 3.2.5.22.9.35 1.21.45.51.16.97.14 1.34.09.41-.06 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.05-.09-.19-.14-.41-.25z"/></svg>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- CONTACTS -->
 <section class="contacts" id="contacts">
     <div class="container">
-        <h2 class="section-title">Контакти</h2>
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Контакти</span>
+            <h2 class="section-title">Зв'яжіться з нами</h2>
+            <p class="section-desc">Працюємо щодня — зателефонуйте або напишіть у зручний месенджер</p>
+        </div>
         <div class="contacts-grid">
-            <div class="contact-item">
-                <div class="contact-icon">📱</div>
+            <a href="tel:+380680764609" class="contact-card contact-card-phone" data-aos="fade-up" data-aos-delay="0">
+                <div class="contact-icon-wrap contact-icon-phone">
+                    <span>📱</span>
+                </div>
                 <h3>Телефон</h3>
-                <a href="tel:+380680764609" class="contact-link">068 076 46 09</a>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">📍</div>
+                <span class="contact-value">068 076 46 09</span>
+                <span class="contact-sub">Пн–Нд: 06:00–23:00</span>
+            </a>
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-icon-wrap contact-icon-location">
+                    <span>📍</span>
+                </div>
                 <h3>Локація</h3>
-                <p>м. Хмельницький<br>Виїзд по області</p>
+                <span class="contact-value">м. Хмельницький</span>
+                <span class="contact-sub">Виїзд по всій області</span>
             </div>
-            <div class="contact-item">
-                <div class="contact-icon">🕐</div>
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-icon-wrap contact-icon-clock">
+                    <span>🕐</span>
+                </div>
                 <h3>Графік роботи</h3>
-                <p>Пн–Нд: 06:00–23:00</p>
+                <span class="contact-value">06:00 – 23:00</span>
+                <span class="contact-sub">Без вихідних</span>
+            </div>
+        </div>
+        <div class="contacts-messengers" data-aos="fade-up">
+            <h3 class="mess-title">Напишіть у месенджер:</h3>
+            <div class="messengers-grid">
+                <a href="viber://chat?number=%2B380680764609" class="messenger-card viber">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 13.27c-.2.56-1.18 1.07-1.63 1.12-.42.05-.95.07-1.53-.11-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.01-3.49-4.13-3.65-.12-.16-1-1.33-1-2.54s.63-1.8.86-2.04c.22-.24.48-.3.64-.3h.46c.15 0 .34-.06.53.41.2.48.68 1.66.74 1.78.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.11-.24.23-.1.45.14.22.62 1.02 1.33 1.65.92.82 1.69 1.07 1.93 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.14z"/></svg>
+                    <span>Viber</span>
+                </a>
+                <a href="https://t.me/+380680764609" class="messenger-card telegram">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.92 6.34l-1.64 7.74c-.12.56-.46.7-.93.44l-2.57-1.9-1.24 1.19c-.14.14-.25.25-.51.25l.18-2.6 4.75-4.29c.21-.18-.04-.28-.32-.1l-5.87 3.69-2.53-.79c-.55-.17-.56-.55.12-.81l9.88-3.81c.46-.17.86.11.71.99z"/></svg>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://wa.me/380680764609" class="messenger-card whatsapp">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33C8.53 21.5 10.22 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.22-.45-4.55-1.24l-.33-.2-3.01.79.8-2.94-.21-.34C5.16 14.76 4.7 13.43 4.7 12c0-4.03 3.27-7.3 7.3-7.3s7.3 3.27 7.3 7.3-3.27 7.3-7.3 7.3zm4.02-5.46c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.49.11-.14.22-.55.71-.68.86-.12.14-.25.16-.47.05-.22-.11-.92-.34-1.76-1.08-.65-.58-1.09-1.29-1.22-1.51-.12-.22-.01-.33.1-.44.1-.1.22-.25.33-.38.11-.13.14-.22.22-.37.07-.14.04-.27-.02-.38-.05-.11-.49-1.18-.67-1.62-.18-.43-.36-.37-.49-.38h-.42c-.14 0-.37.05-.56.27-.19.22-.74.72-.74 1.76s.76 2.04.86 2.18c.11.14 1.49 2.28 3.61 3.2.5.22.9.35 1.21.45.51.16.97.14 1.34.09.41-.06 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.05-.09-.19-.14-.41-.25z"/></svg>
+                    <span>WhatsApp</span>
+                </a>
             </div>
         </div>
     </div>
@@ -183,15 +327,61 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-inner">
-            <div class="footer-logo">🚛 ВантажХМ</div>
-            <div class="footer-info">
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">🚛 ВантажХМ</div>
                 <p>Вантажні перевезення по Хмельницькому та області</p>
-                <a href="tel:+380680764609" class="phone-footer">068 076 46 09</a>
+            </div>
+            <div class="footer-col">
+                <h4>Навігація</h4>
+                <a href="#advantages">Переваги</a>
+                <a href="#services">Послуги</a>
+                <a href="#gallery">Техніка</a>
+                <a href="#contacts">Контакти</a>
+            </div>
+            <div class="footer-col">
+                <h4>Послуги</h4>
+                <a href="tel:+380680764609">Квартирні переїзди</a>
+                <a href="tel:+380680764609">Будівельні вантажі</a>
+                <a href="tel:+380680764609">Перевезення меблів</a>
+                <a href="tel:+380680764609">Перевезення по області</a>
+            </div>
+            <div class="footer-col footer-contacts">
+                <h4>Контакти</h4>
+                <a href="tel:+380680764609" class="phone-footer">📞 068 076 46 09</a>
+                <div class="footer-messengers">
+                    <a href="viber://chat?number=%2B380680764609" class="footer-mess-icon viber" title="Viber">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 13.27c-.2.56-1.18 1.07-1.63 1.12-.42.05-.95.07-1.53-.11-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.01-3.49-4.13-3.65-.12-.16-1-1.33-1-2.54s.63-1.8.86-2.04c.22-.24.48-.3.64-.3h.46c.15 0 .34-.06.53.41.2.48.68 1.66.74 1.78.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.11-.24.23-.1.45.14.22.62 1.02 1.33 1.65.92.82 1.69 1.07 1.93 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.14z"/></svg>
+                    </a>
+                    <a href="https://t.me/+380680764609" class="footer-mess-icon telegram" title="Telegram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.92 6.34l-1.64 7.74c-.12.56-.46.7-.93.44l-2.57-1.9-1.24 1.19c-.14.14-.25.25-.51.25l.18-2.6 4.75-4.29c.21-.18-.04-.28-.32-.1l-5.87 3.69-2.53-.79c-.55-.17-.56-.55.12-.81l9.88-3.81c.46-.17.86.11.71.99z"/></svg>
+                    </a>
+                    <a href="https://wa.me/380680764609" class="footer-mess-icon whatsapp" title="WhatsApp">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33C8.53 21.5 10.22 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.22-.45-4.55-1.24l-.33-.2-3.01.79.8-2.94-.21-.34C5.16 14.76 4.7 13.43 4.7 12c0-4.03 3.27-7.3 7.3-7.3s7.3 3.27 7.3 7.3-3.27 7.3-7.3 7.3zm4.02-5.46c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.49.11-.14.22-.55.71-.68.86-.12.14-.25.16-.47.05-.22-.11-.92-.34-1.76-1.08-.65-.58-1.09-1.29-1.22-1.51-.12-.22-.01-.33.1-.44.1-.1.22-.25.33-.38.11-.13.14-.22.22-.37.07-.14.04-.27-.02-.38-.05-.11-.49-1.18-.67-1.62-.18-.43-.36-.37-.49-.38h-.42c-.14 0-.37.05-.56.27-.19.22-.74.72-.74 1.76s.76 2.04.86 2.18c.11.14 1.49 2.28 3.61 3.2.5.22.9.35 1.21.45.51.16.97.14 1.34.09.41-.06 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.05-.09-.19-.14-.41-.25z"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="footer-copy">© 2026 ВантажХМ. Всі права захищені.</div>
+        <div class="footer-copy">© 2026 ВантажХМ — Вантажні перевезення Хмельницький. Всі права захищені.</div>
     </div>
 </footer>
 
+<!-- FLOATING ACTION BUTTONS -->
+<div class="fab-container">
+    <a href="tel:+380680764609" class="fab fab-phone" title="Зателефонувати">
+        <span>📞</span>
+        <span class="fab-pulse"></span>
+    </a>
+    <a href="viber://chat?number=%2B380680764609" class="fab fab-viber" title="Viber">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 13.27c-.2.56-1.18 1.07-1.63 1.12-.42.05-.95.07-1.53-.11-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.01-3.49-4.13-3.65-.12-.16-1-1.33-1-2.54s.63-1.8.86-2.04c.22-.24.48-.3.64-.3h.46c.15 0 .34-.06.53.41.2.48.68 1.66.74 1.78.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.11-.24.23-.1.45.14.22.62 1.02 1.33 1.65.92.82 1.69 1.07 1.93 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.14z"/></svg>
+    </a>
+    <a href="https://t.me/+380680764609" class="fab fab-telegram" title="Telegram">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.92 6.34l-1.64 7.74c-.12.56-.46.7-.93.44l-2.57-1.9-1.24 1.19c-.14.14-.25.25-.51.25l.18-2.6 4.75-4.29c.21-.18-.04-.28-.32-.1l-5.87 3.69-2.53-.79c-.55-.17-.56-.55.12-.81l9.88-3.81c.46-.17.86.11.71.99z"/></svg>
+    </a>
+    <a href="https://wa.me/380680764609" class="fab fab-whatsapp" title="WhatsApp">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33C8.53 21.5 10.22 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.22-.45-4.55-1.24l-.33-.2-3.01.79.8-2.94-.21-.34C5.16 14.76 4.7 13.43 4.7 12c0-4.03 3.27-7.3 7.3-7.3s7.3 3.27 7.3 7.3-3.27 7.3-7.3 7.3zm4.02-5.46c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.49.11-.14.22-.55.71-.68.86-.12.14-.25.16-.47.05-.22-.11-.92-.34-1.76-1.08-.65-.58-1.09-1.29-1.22-1.51-.12-.22-.01-.33.1-.44.1-.1.22-.25.33-.38.11-.13.14-.22.22-.37.07-.14.04-.27-.02-.38-.05-.11-.49-1.18-.67-1.62-.18-.43-.36-.37-.49-.38h-.42c-.14 0-.37.05-.56.27-.19.22-.74.72-.74 1.76s.76 2.04.86 2.18c.11.14 1.49 2.28 3.61 3.2.5.22.9.35 1.21.45.51.16.97.14 1.34.09.41-.06 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.05-.09-.19-.14-.41-.25z"/></svg>
+    </a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
