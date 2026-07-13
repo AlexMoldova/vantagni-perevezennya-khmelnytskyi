@@ -1239,26 +1239,29 @@ img {
         order: 3;
         flex: 1 1 100%;
         margin-top: 10px;
-        gap: 10px;
+        gap: 8px;
     }
 
     .phone-header {
         flex: 1;
         justify-content: center;
-        padding: 12px 16px;
-        font-size: 1rem;
+        padding: 12px 14px;
+        font-size: 0.95rem;
         border-radius: var(--radius-sm);
+        min-width: 0;
     }
 
     /* Show messenger icons on mobile */
     .header-messengers {
         display: flex;
         flex-shrink: 0;
+        gap: 6px;
     }
 
     .header-mess {
         width: 44px;
         height: 44px;
+        flex-shrink: 0;
     }
 
     /* Mobile nav dropdown */
@@ -1378,5 +1381,26 @@ img {
     .messenger-card {
         min-width: 100px;
         padding: 18px 20px;
+    }
+
+    /* Compact header on very small phones */
+    .header-contact {
+        gap: 6px;
+    }
+
+    .header-mess {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header-mess svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .phone-header {
+        font-size: 0.85rem;
+        padding: 10px 10px;
+        gap: 6px;
     }
 }
